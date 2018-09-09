@@ -1,0 +1,34 @@
+Identify the aspects of your application that vary and separate them from what stays the same. - Take the part that varies and encapsulate them, so that later you can alter the parts that vary without affecting those that don't.
+Program to an interface, not an implementation - meaning program to a supertype - the declared type of variable should always be an abstract class or an interface, so that the objects assigned to those variables can be of any concrete implementation of the supertype so that the class implementing those does not need to know about the type.
+Favour composition over inheritance - gives more flexibility, not only lets you encapsulate behaviour into separate classes but also lets you change behaviour at runtime.
+^^^^^Strategy pattern - defines a set of algorithms, encapsulates each one and makes them interchangeable. Lets the algorithm vary independently from clients that use it.
+
+Strive for loosely coupled designs between objects that interact.
+^^^^^Observer pattern - defines a one-to-many dependency between objects, so that if one object state changes, all its dependents are notified and updated automatically.
+
+Classes should be open for extension but closed for modification.
+^^^^^Decorator pattern - attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Depend upon abstractions. Do not depend on concrete classes. - Any higher level component should not be dependent on lower level components
+Following guidelines can help you to avoid OO designs which violate the dependency inversion principle:
+1. No variable should hold a reference to concrete class
+2. No class should derive from a concrete class
+3. No method should override an implemented method of any of its base classes
+^^^^^Factory Method pattern  - defines an interface for creating an object, but lets subclasses decide which class to instantiate - Lets a class defer instantiation to subclasses.
+^^^^^Abstract Factory pattern - provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+^^^^^Singleton Pattern - ensures that class only has one instance and it provides a global point of access to it.
+
+^^^^^Command Pattern - encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests and support undoable operations.
+
+^^^^^Adapter Pattern - converts an interface of a class into another interface that client excepts. It lets classes work together that could not otherwise due to incompatible interfaces.
+
+Principle of least knowledge - Talk only to your immediate friends.
+This principle provides guidelines that:
+Take an object, now from any method in that object, we should invoke methods that belong to:
+1. The object itself
+2. Objects passed in as parameter to method
+3. Any object the method creates or instantiates
+4. Any components of the object.
+This prevents us from creating designs that have a large number of classes coupled together so that changes in one part of the system cascades to other parts.
+^^^^^Facade Pattern - provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher level interface that makes subsystem easy to use.
