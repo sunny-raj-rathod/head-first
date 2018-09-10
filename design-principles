@@ -32,3 +32,6 @@ Take an object, now from any method in that object, we should invoke methods tha
 4. Any components of the object.
 This prevents us from creating designs that have a large number of classes coupled together so that changes in one part of the system cascades to other parts.
 ^^^^^Facade Pattern - provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher level interface that makes subsystem easy to use.
+
+The hollywood principle - Don't call us, we'll call you. - This prevents Dependency rot. - This principle allows low level components to hook themselves into a system, but the higher level components determine when they are needed and how.
+^^^^^Template Method - defines the skeleton of an algorithm in a method deferring some steps to subclasses. Template method lets subclasses redefine certain steps of the algorithm without changing the algorithm's structure.
