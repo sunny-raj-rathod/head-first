@@ -40,3 +40,6 @@ The hollywood principle - Don't call us, we'll call you. - This prevents Depende
 
 A class should have only one reason to change. Classes that have only single responsibility have high cohesion, whereas the classes which handle multiple responsibilities have low cohesion.
 ^^^^^Composite Pattern - allows you to compose objects into tree structures which represent part-whole hierarchies. Composite lets client treat individual objects and composition of objects uniformly.
+
+
+^^^^^State Pattern - allows an object to alter its behaviour when its internal state changes. Object will appear to change its class.
