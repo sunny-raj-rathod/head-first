@@ -43,3 +43,5 @@ A class should have only one reason to change. Classes that have only single res
 
 
 ^^^^^State Pattern - allows an object to alter its behaviour when its internal state changes. Object will appear to change its class.
+
+^^^^^Proxy pattern - provides a surrogate or placeholder for another object to control access to it.
