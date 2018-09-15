@@ -45,3 +45,9 @@ A class should have only one reason to change. Classes that have only single res
 ^^^^^State Pattern - allows an object to alter its behaviour when its internal state changes. Object will appear to change its class.
 
 ^^^^^Proxy pattern - provides a surrogate or placeholder for another object to control access to it.
+
+^^^^^MVC pattern -
+is a compound pattern, which utilizes Observer, Strategy and Composite patterns
+Model utilizes Observer pattern, so that it can keep observers updated about the state yet stay decoupled from them.
+Controller is the strategy for the view. The view can use different implementations of the controller to get different behaviour.
+View uses Composite pattern to implement the UI.
